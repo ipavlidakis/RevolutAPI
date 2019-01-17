@@ -1,0 +1,1046 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40DB1E5121EE651A000D4F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E5021EE651A000D4F38 /* AppDelegate.swift */; };
+		40DB1E5821EE651B000D4F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40DB1E5721EE651B000D4F38 /* Assets.xcassets */; };
+		40DB1E5B21EE651B000D4F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40DB1E5921EE651B000D4F38 /* LaunchScreen.storyboard */; };
+		40DB1E6621EE651B000D4F38 /* RevolutTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E6521EE651B000D4F38 /* RevolutTestTests.swift */; };
+		40DB1E7421EE6580000D4F38 /* ListCurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E7321EE6580000D4F38 /* ListCurrenciesViewController.swift */; };
+		40DB1E7A21EE6699000D4F38 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E7921EE6699000D4F38 /* CurrencyTableViewCell.swift */; };
+		40DB1E7C21EE66D4000D4F38 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40DB1E7B21EE66D4000D4F38 /* CurrencyTableViewCell.xib */; };
+		40DB1E7E21EE7225000D4F38 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E7D21EE7225000D4F38 /* TableViewAdapter.swift */; };
+		40DB1E8121EE7273000D4F38 /* CurrencyPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E8021EE7273000D4F38 /* CurrencyPrice.swift */; };
+		40DB1E8421EE757B000D4F38 /* CurrencyTableViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E8321EE757B000D4F38 /* CurrencyTableViewCellConfigurator.swift */; };
+		40DB1E8721EE7D53000D4F38 /* CircularUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E8621EE7D53000D4F38 /* CircularUIImageView.swift */; };
+		40DB1E8921EE7FB6000D4F38 /* CurrenciesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E8821EE7FB6000D4F38 /* CurrenciesFetcher.swift */; };
+		40DB1E8B21EE84F1000D4F38 /* MainQueueDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E8A21EE84F1000D4F38 /* MainQueueDispatcher.swift */; };
+		40DB1E8D21EE8573000D4F38 /* JSONURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E8C21EE8573000D4F38 /* JSONURLSession.swift */; };
+		40DB1E9521EEB32B000D4F38 /* String+toNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E9421EEB32B000D4F38 /* String+toNumber.swift */; };
+		40DB1E9721EEBA89000D4F38 /* TimerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E9621EEBA89000D4F38 /* TimerFactory.swift */; };
+		40DB1E9A21EEBE0E000D4F38 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E9921EEBE0E000D4F38 /* Store.swift */; };
+		40DB1E9C21EEBE65000D4F38 /* RevolutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1E9B21EEBE65000D4F38 /* RevolutTest.swift */; };
+		40DB1EA121EEBEB5000D4F38 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EA021EEBEB5000D4F38 /* AppState.swift */; };
+		40DB1EA421EEBEF7000D4F38 /* StoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EA321EEBEF7000D4F38 /* StoreProtocol.swift */; };
+		40DB1EA621EEBF0A000D4F38 /* ReducerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EA521EEBF0A000D4F38 /* ReducerProtocol.swift */; };
+		40DB1EA821EEBF22000D4F38 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EA721EEBF22000D4F38 /* ActionProtocol.swift */; };
+		40DB1EAA21EEBF3B000D4F38 /* MiddlewareProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EA921EEBF3B000D4F38 /* MiddlewareProtocol.swift */; };
+		40DB1EAC21EEBF50000D4F38 /* ListenerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EAB21EEBF50000D4F38 /* ListenerProtocol.swift */; };
+		40DB1EB421EEC26B000D4F38 /* UpdateCurrenciesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EB321EEC26B000D4F38 /* UpdateCurrenciesAction.swift */; };
+		40DB1EB621EEC303000D4F38 /* UpdateNetworkStateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EB521EEC303000D4F38 /* UpdateNetworkStateAction.swift */; };
+		40DB1EB821EEC30A000D4F38 /* UpdateTimerStateAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EB721EEC30A000D4F38 /* UpdateTimerStateAction.swift */; };
+		40DB1EBB21EEC3DC000D4F38 /* TimerStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EBA21EEC3DC000D4F38 /* TimerStateHandler.swift */; };
+		40DB1EBD21EEC61E000D4F38 /* TableViewStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EBC21EEC61E000D4F38 /* TableViewStateHandler.swift */; };
+		40DB1EBF21EEC793000D4F38 /* NetworkStateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EBE21EEC793000D4F38 /* NetworkStateHandler.swift */; };
+		40DB1EC321EEC888000D4F38 /* CurrenciesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EC221EEC888000D4F38 /* CurrenciesReducer.swift */; };
+		40DB1EC521EEC936000D4F38 /* TimerReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EC421EEC936000D4F38 /* TimerReducer.swift */; };
+		40DB1EC721EEC96F000D4F38 /* NetworkReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EC621EEC96F000D4F38 /* NetworkReducer.swift */; };
+		40DB1EC921EECB52000D4F38 /* TimerToNetworkToUILogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1EC821EECB52000D4F38 /* TimerToNetworkToUILogMiddleware.swift */; };
+		40DB1ECD21EED28B000D4F38 /* TextfieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DB1ECC21EED28B000D4F38 /* TextfieldAdapter.swift */; };
+		40E958C121EFBC5E003BAE28 /* TextfieldAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958C021EFBC5E003BAE28 /* TextfieldAdapterTests.swift */; };
+		40E958C321EFC13C003BAE28 /* TableViewAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958C221EFC13C003BAE28 /* TableViewAdapterTests.swift */; };
+		40E958C521EFC188003BAE28 /* StubCurrencyTableViewCellConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958C421EFC188003BAE28 /* StubCurrencyTableViewCellConfigurator.swift */; };
+		40E958C721EFC20F003BAE28 /* StubNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958C621EFC20F003BAE28 /* StubNumberFormatter.swift */; };
+		40E958C921EFC2BB003BAE28 /* StubUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958C821EFC2BB003BAE28 /* StubUITextFieldDelegate.swift */; };
+		40E958CB21EFC3BA003BAE28 /* StubUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958CA21EFC3BA003BAE28 /* StubUITableView.swift */; };
+		40E958CD21EFC764003BAE28 /* StubTableViewAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958CC21EFC764003BAE28 /* StubTableViewAdapterDelegate.swift */; };
+		40E958CF21EFCCEE003BAE28 /* CircularUIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958CE21EFCCEE003BAE28 /* CircularUIImageViewTests.swift */; };
+		40E958DD21EFCF5F003BAE28 /* JSONURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958DC21EFCF5F003BAE28 /* JSONURLSessionTests.swift */; };
+		40E958DF21EFCF88003BAE28 /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958DE21EFCF88003BAE28 /* StubURLSession.swift */; };
+		40E958E121EFD02F003BAE28 /* StubURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958E021EFD02F003BAE28 /* StubURLSessionDataTask.swift */; };
+		40E958E321EFE12E003BAE28 /* CurrenciesFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958E221EFE12E003BAE28 /* CurrenciesFetcherTests.swift */; };
+		40E958E521EFE1C3003BAE28 /* StubQueueDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958E421EFE1C3003BAE28 /* StubQueueDispatcher.swift */; };
+		40E958E721EFE228003BAE28 /* StubURLSessionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958E621EFE228003BAE28 /* StubURLSessionFetcher.swift */; };
+		40E958EA21EFF793003BAE28 /* UpdateCurrenciesActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958E921EFF793003BAE28 /* UpdateCurrenciesActionTests.swift */; };
+		40E958EC21EFF807003BAE28 /* UpdateNetworkStateActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958EB21EFF807003BAE28 /* UpdateNetworkStateActionTests.swift */; };
+		40E958EE21EFF840003BAE28 /* UpdateTimerStateActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958ED21EFF840003BAE28 /* UpdateTimerStateActionTests.swift */; };
+		40E958F021EFF868003BAE28 /* UpdateEditingActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958EF21EFF868003BAE28 /* UpdateEditingActionTests.swift */; };
+		40E958F221EFF8B2003BAE28 /* ManualUpdateCurrenciesActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958F121EFF8B2003BAE28 /* ManualUpdateCurrenciesActionTests.swift */; };
+		40E958F521EFF926003BAE28 /* TimerStateHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958F421EFF926003BAE28 /* TimerStateHandlerTests.swift */; };
+		40E958F721EFF964003BAE28 /* StubStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958F621EFF964003BAE28 /* StubStore.swift */; };
+		40E958F921EFFA32003BAE28 /* StubTimerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958F821EFFA32003BAE28 /* StubTimerFactory.swift */; };
+		40E958FB21EFFAA5003BAE28 /* StubTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958FA21EFFAA5003BAE28 /* StubTimer.swift */; };
+		40E958FD21EFFDBE003BAE28 /* TimerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958FC21EFFDBE003BAE28 /* TimerProtocol.swift */; };
+		40E958FF21F007D2003BAE28 /* NetworkStateHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E958FE21F007D2003BAE28 /* NetworkStateHandlerTests.swift */; };
+		40E9590121F00806003BAE28 /* StubCurrenciesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9590021F00806003BAE28 /* StubCurrenciesFetcher.swift */; };
+		40E9590321F00C76003BAE28 /* TableViewStateHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9590221F00C76003BAE28 /* TableViewStateHandlerTests.swift */; };
+		40E9590521F00DC3003BAE28 /* StubUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9590421F00DC3003BAE28 /* StubUITableViewController.swift */; };
+		40E9590721F00E5B003BAE28 /* TableViewProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9590621F00E5B003BAE28 /* TableViewProviding.swift */; };
+		40E9590921F00EFE003BAE28 /* StubTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9590821F00EFE003BAE28 /* StubTableViewAdapter.swift */; };
+		40E9590E21F0146D003BAE28 /* CurrenciesReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9590D21F0146D003BAE28 /* CurrenciesReducerTests.swift */; };
+		40E9591021F015E1003BAE28 /* TimerReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9590F21F015E1003BAE28 /* TimerReducerTests.swift */; };
+		40E9591221F01642003BAE28 /* NetworkReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9591121F01642003BAE28 /* NetworkReducerTests.swift */; };
+		40E9591421F01691003BAE28 /* EditingReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9591321F01691003BAE28 /* EditingReducerTests.swift */; };
+		40E9591621F01732003BAE28 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9591521F01732003BAE28 /* StoreTests.swift */; };
+		40E9591821F01778003BAE28 /* StubReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9591721F01778003BAE28 /* StubReducer.swift */; };
+		40E9591A21F01820003BAE28 /* StubMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9591921F01820003BAE28 /* StubMiddleware.swift */; };
+		40E9591D21F01B94003BAE28 /* ListCurrenciesViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9591C21F01B94003BAE28 /* ListCurrenciesViewControllerViewController.swift */; };
+		40E9592221F01CC4003BAE28 /* CurrencyTableViewCellConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9592121F01CC4003BAE28 /* CurrencyTableViewCellConfiguratorTests.swift */; };
+		40E9592621F01F26003BAE28 /* NumberFormatter_RevolutTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E9592521F01F26003BAE28 /* NumberFormatter_RevolutTestTests.swift */; };
+		40EF676C21EF97280031CDC9 /* NumberFormatter+RevolutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF676B21EF97280031CDC9 /* NumberFormatter+RevolutTest.swift */; };
+		40EF676E21EF9BCF0031CDC9 /* EditingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF676D21EF9BCF0031CDC9 /* EditingReducer.swift */; };
+		40EF677021EF9BEB0031CDC9 /* UpdateEditingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF676F21EF9BEB0031CDC9 /* UpdateEditingAction.swift */; };
+		40EF677221EFA33A0031CDC9 /* ManualUpdateCurrenciesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF677121EFA33A0031CDC9 /* ManualUpdateCurrenciesAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40DB1E6221EE651B000D4F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DB1E4521EE651A000D4F38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40DB1E4C21EE651A000D4F38;
+			remoteInfo = RevolutTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40DB1E4D21EE651A000D4F38 /* RevolutTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevolutTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB1E5021EE651A000D4F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40DB1E5721EE651B000D4F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40DB1E5A21EE651B000D4F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40DB1E5C21EE651B000D4F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DB1E6121EE651B000D4F38 /* RevolutTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevolutTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40DB1E6521EE651B000D4F38 /* RevolutTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutTestTests.swift; sourceTree = "<group>"; };
+		40DB1E6721EE651B000D4F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DB1E7321EE6580000D4F38 /* ListCurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCurrenciesViewController.swift; sourceTree = "<group>"; };
+		40DB1E7921EE6699000D4F38 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		40DB1E7B21EE66D4000D4F38 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		40DB1E7D21EE7225000D4F38 /* TableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
+		40DB1E8021EE7273000D4F38 /* CurrencyPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPrice.swift; sourceTree = "<group>"; };
+		40DB1E8321EE757B000D4F38 /* CurrencyTableViewCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCellConfigurator.swift; sourceTree = "<group>"; };
+		40DB1E8621EE7D53000D4F38 /* CircularUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularUIImageView.swift; sourceTree = "<group>"; };
+		40DB1E8821EE7FB6000D4F38 /* CurrenciesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesFetcher.swift; sourceTree = "<group>"; };
+		40DB1E8A21EE84F1000D4F38 /* MainQueueDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatcher.swift; sourceTree = "<group>"; };
+		40DB1E8C21EE8573000D4F38 /* JSONURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONURLSession.swift; sourceTree = "<group>"; };
+		40DB1E9421EEB32B000D4F38 /* String+toNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+toNumber.swift"; sourceTree = "<group>"; };
+		40DB1E9621EEBA89000D4F38 /* TimerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFactory.swift; sourceTree = "<group>"; };
+		40DB1E9921EEBE0E000D4F38 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		40DB1E9B21EEBE65000D4F38 /* RevolutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutTest.swift; sourceTree = "<group>"; };
+		40DB1EA021EEBEB5000D4F38 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		40DB1EA321EEBEF7000D4F38 /* StoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreProtocol.swift; sourceTree = "<group>"; };
+		40DB1EA521EEBF0A000D4F38 /* ReducerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerProtocol.swift; sourceTree = "<group>"; };
+		40DB1EA721EEBF22000D4F38 /* ActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
+		40DB1EA921EEBF3B000D4F38 /* MiddlewareProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareProtocol.swift; sourceTree = "<group>"; };
+		40DB1EAB21EEBF50000D4F38 /* ListenerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerProtocol.swift; sourceTree = "<group>"; };
+		40DB1EB321EEC26B000D4F38 /* UpdateCurrenciesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCurrenciesAction.swift; sourceTree = "<group>"; };
+		40DB1EB521EEC303000D4F38 /* UpdateNetworkStateAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNetworkStateAction.swift; sourceTree = "<group>"; };
+		40DB1EB721EEC30A000D4F38 /* UpdateTimerStateAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTimerStateAction.swift; sourceTree = "<group>"; };
+		40DB1EBA21EEC3DC000D4F38 /* TimerStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStateHandler.swift; sourceTree = "<group>"; };
+		40DB1EBC21EEC61E000D4F38 /* TableViewStateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewStateHandler.swift; sourceTree = "<group>"; };
+		40DB1EBE21EEC793000D4F38 /* NetworkStateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStateHandler.swift; sourceTree = "<group>"; };
+		40DB1EC221EEC888000D4F38 /* CurrenciesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesReducer.swift; sourceTree = "<group>"; };
+		40DB1EC421EEC936000D4F38 /* TimerReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerReducer.swift; sourceTree = "<group>"; };
+		40DB1EC621EEC96F000D4F38 /* NetworkReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReducer.swift; sourceTree = "<group>"; };
+		40DB1EC821EECB52000D4F38 /* TimerToNetworkToUILogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerToNetworkToUILogMiddleware.swift; sourceTree = "<group>"; };
+		40DB1ECC21EED28B000D4F38 /* TextfieldAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldAdapter.swift; sourceTree = "<group>"; };
+		40E958C021EFBC5E003BAE28 /* TextfieldAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldAdapterTests.swift; sourceTree = "<group>"; };
+		40E958C221EFC13C003BAE28 /* TableViewAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdapterTests.swift; sourceTree = "<group>"; };
+		40E958C421EFC188003BAE28 /* StubCurrencyTableViewCellConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCurrencyTableViewCellConfigurator.swift; sourceTree = "<group>"; };
+		40E958C621EFC20F003BAE28 /* StubNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubNumberFormatter.swift; sourceTree = "<group>"; };
+		40E958C821EFC2BB003BAE28 /* StubUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUITextFieldDelegate.swift; sourceTree = "<group>"; };
+		40E958CA21EFC3BA003BAE28 /* StubUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUITableView.swift; sourceTree = "<group>"; };
+		40E958CC21EFC764003BAE28 /* StubTableViewAdapterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTableViewAdapterDelegate.swift; sourceTree = "<group>"; };
+		40E958CE21EFCCEE003BAE28 /* CircularUIImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularUIImageViewTests.swift; sourceTree = "<group>"; };
+		40E958DC21EFCF5F003BAE28 /* JSONURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONURLSessionTests.swift; sourceTree = "<group>"; };
+		40E958DE21EFCF88003BAE28 /* StubURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSession.swift; sourceTree = "<group>"; };
+		40E958E021EFD02F003BAE28 /* StubURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSessionDataTask.swift; sourceTree = "<group>"; };
+		40E958E221EFE12E003BAE28 /* CurrenciesFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesFetcherTests.swift; sourceTree = "<group>"; };
+		40E958E421EFE1C3003BAE28 /* StubQueueDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubQueueDispatcher.swift; sourceTree = "<group>"; };
+		40E958E621EFE228003BAE28 /* StubURLSessionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSessionFetcher.swift; sourceTree = "<group>"; };
+		40E958E921EFF793003BAE28 /* UpdateCurrenciesActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCurrenciesActionTests.swift; sourceTree = "<group>"; };
+		40E958EB21EFF807003BAE28 /* UpdateNetworkStateActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNetworkStateActionTests.swift; sourceTree = "<group>"; };
+		40E958ED21EFF840003BAE28 /* UpdateTimerStateActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTimerStateActionTests.swift; sourceTree = "<group>"; };
+		40E958EF21EFF868003BAE28 /* UpdateEditingActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEditingActionTests.swift; sourceTree = "<group>"; };
+		40E958F121EFF8B2003BAE28 /* ManualUpdateCurrenciesActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualUpdateCurrenciesActionTests.swift; sourceTree = "<group>"; };
+		40E958F421EFF926003BAE28 /* TimerStateHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStateHandlerTests.swift; sourceTree = "<group>"; };
+		40E958F621EFF964003BAE28 /* StubStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubStore.swift; sourceTree = "<group>"; };
+		40E958F821EFFA32003BAE28 /* StubTimerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTimerFactory.swift; sourceTree = "<group>"; };
+		40E958FA21EFFAA5003BAE28 /* StubTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTimer.swift; sourceTree = "<group>"; };
+		40E958FC21EFFDBE003BAE28 /* TimerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProtocol.swift; sourceTree = "<group>"; };
+		40E958FE21F007D2003BAE28 /* NetworkStateHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStateHandlerTests.swift; sourceTree = "<group>"; };
+		40E9590021F00806003BAE28 /* StubCurrenciesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCurrenciesFetcher.swift; sourceTree = "<group>"; };
+		40E9590221F00C76003BAE28 /* TableViewStateHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewStateHandlerTests.swift; sourceTree = "<group>"; };
+		40E9590421F00DC3003BAE28 /* StubUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUITableViewController.swift; sourceTree = "<group>"; };
+		40E9590621F00E5B003BAE28 /* TableViewProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProviding.swift; sourceTree = "<group>"; };
+		40E9590821F00EFE003BAE28 /* StubTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTableViewAdapter.swift; sourceTree = "<group>"; };
+		40E9590D21F0146D003BAE28 /* CurrenciesReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesReducerTests.swift; sourceTree = "<group>"; };
+		40E9590F21F015E1003BAE28 /* TimerReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerReducerTests.swift; sourceTree = "<group>"; };
+		40E9591121F01642003BAE28 /* NetworkReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReducerTests.swift; sourceTree = "<group>"; };
+		40E9591321F01691003BAE28 /* EditingReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingReducerTests.swift; sourceTree = "<group>"; };
+		40E9591521F01732003BAE28 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		40E9591721F01778003BAE28 /* StubReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubReducer.swift; sourceTree = "<group>"; };
+		40E9591921F01820003BAE28 /* StubMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubMiddleware.swift; sourceTree = "<group>"; };
+		40E9591C21F01B94003BAE28 /* ListCurrenciesViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCurrenciesViewControllerViewController.swift; sourceTree = "<group>"; };
+		40E9592121F01CC4003BAE28 /* CurrencyTableViewCellConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCellConfiguratorTests.swift; sourceTree = "<group>"; };
+		40E9592521F01F26003BAE28 /* NumberFormatter_RevolutTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter_RevolutTestTests.swift; sourceTree = "<group>"; };
+		40EF676B21EF97280031CDC9 /* NumberFormatter+RevolutTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+RevolutTest.swift"; sourceTree = "<group>"; };
+		40EF676D21EF9BCF0031CDC9 /* EditingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingReducer.swift; sourceTree = "<group>"; };
+		40EF676F21EF9BEB0031CDC9 /* UpdateEditingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEditingAction.swift; sourceTree = "<group>"; };
+		40EF677121EFA33A0031CDC9 /* ManualUpdateCurrenciesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualUpdateCurrenciesAction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40DB1E4A21EE651A000D4F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB1E5E21EE651B000D4F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40DB1E4421EE651A000D4F38 = {
+			isa = PBXGroup;
+			children = (
+				40DB1E4F21EE651A000D4F38 /* RevolutTest */,
+				40DB1E6421EE651B000D4F38 /* RevolutTestTests */,
+				40DB1E4E21EE651A000D4F38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40DB1E4E21EE651A000D4F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E4D21EE651A000D4F38 /* RevolutTest.app */,
+				40DB1E6121EE651B000D4F38 /* RevolutTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40DB1E4F21EE651A000D4F38 /* RevolutTest */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E7121EE652F000D4F38 /* Resources */,
+				40DB1E7021EE6528000D4F38 /* Implementation */,
+				40DB1E5021EE651A000D4F38 /* AppDelegate.swift */,
+			);
+			path = RevolutTest;
+			sourceTree = "<group>";
+		};
+		40DB1E6421EE651B000D4F38 /* RevolutTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				40E958BE21EFBC46003BAE28 /* Stubs */,
+				40E958BC21EFBC35003BAE28 /* Implementation */,
+				40DB1E6521EE651B000D4F38 /* RevolutTestTests.swift */,
+				40DB1E6721EE651B000D4F38 /* Info.plist */,
+				40E9591721F01778003BAE28 /* StubReducer.swift */,
+			);
+			path = RevolutTestTests;
+			sourceTree = "<group>";
+		};
+		40DB1E7021EE6528000D4F38 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EB921EEC3CE000D4F38 /* Utilities */,
+				40DB1EB121EEC1AB000D4F38 /* Actions */,
+				40DB1EAD21EEC053000D4F38 /* State Handlers */,
+				40DB1E9821EEBE02000D4F38 /* Redux */,
+				40DB1E9221EEB318000D4F38 /* Extensions */,
+				40DB1E7F21EE7260000D4F38 /* Models */,
+				40DB1E7221EE6568000D4F38 /* List Currencies */,
+				40DB1E9B21EEBE65000D4F38 /* RevolutTest.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		40DB1E7121EE652F000D4F38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E5721EE651B000D4F38 /* Assets.xcassets */,
+				40DB1E5921EE651B000D4F38 /* LaunchScreen.storyboard */,
+				40DB1E5C21EE651B000D4F38 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40DB1E7221EE6568000D4F38 /* List Currencies */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E7521EE6662000D4F38 /* UI */,
+				40DB1E7321EE6580000D4F38 /* ListCurrenciesViewController.swift */,
+			);
+			path = "List Currencies";
+			sourceTree = "<group>";
+		};
+		40DB1E7521EE6662000D4F38 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E7621EE6667000D4F38 /* TableView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		40DB1E7621EE6667000D4F38 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E8221EE7565000D4F38 /* Configurators */,
+				40DB1E7721EE666D000D4F38 /* Cells */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		40DB1E7721EE666D000D4F38 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E7821EE6675000D4F38 /* Currency */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		40DB1E7821EE6675000D4F38 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E7921EE6699000D4F38 /* CurrencyTableViewCell.swift */,
+				40DB1E7B21EE66D4000D4F38 /* CurrencyTableViewCell.xib */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		40DB1E7F21EE7260000D4F38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E8021EE7273000D4F38 /* CurrencyPrice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		40DB1E8221EE7565000D4F38 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E8321EE757B000D4F38 /* CurrencyTableViewCellConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		40DB1E9221EEB318000D4F38 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E9321EEB31D000D4F38 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40DB1E9321EEB31D000D4F38 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E9421EEB32B000D4F38 /* String+toNumber.swift */,
+				40EF676B21EF97280031CDC9 /* NumberFormatter+RevolutTest.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		40DB1E9821EEBE02000D4F38 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EA221EEBEF0000D4F38 /* Protocols */,
+				40DB1E9E21EEBE96000D4F38 /* Middlewares */,
+				40DB1E9D21EEBE8E000D4F38 /* Reducers */,
+				40DB1E9921EEBE0E000D4F38 /* Store.swift */,
+				40DB1EA021EEBEB5000D4F38 /* AppState.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		40DB1E9D21EEBE8E000D4F38 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EC221EEC888000D4F38 /* CurrenciesReducer.swift */,
+				40DB1EC421EEC936000D4F38 /* TimerReducer.swift */,
+				40DB1EC621EEC96F000D4F38 /* NetworkReducer.swift */,
+				40EF676D21EF9BCF0031CDC9 /* EditingReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		40DB1E9E21EEBE96000D4F38 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EC821EECB52000D4F38 /* TimerToNetworkToUILogMiddleware.swift */,
+			);
+			path = Middlewares;
+			sourceTree = "<group>";
+		};
+		40DB1EA221EEBEF0000D4F38 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EA321EEBEF7000D4F38 /* StoreProtocol.swift */,
+				40DB1EA521EEBF0A000D4F38 /* ReducerProtocol.swift */,
+				40DB1EA721EEBF22000D4F38 /* ActionProtocol.swift */,
+				40DB1EA921EEBF3B000D4F38 /* MiddlewareProtocol.swift */,
+				40DB1EAB21EEBF50000D4F38 /* ListenerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		40DB1EAD21EEC053000D4F38 /* State Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EBA21EEC3DC000D4F38 /* TimerStateHandler.swift */,
+				40DB1EBE21EEC793000D4F38 /* NetworkStateHandler.swift */,
+				40DB1EBC21EEC61E000D4F38 /* TableViewStateHandler.swift */,
+			);
+			path = "State Handlers";
+			sourceTree = "<group>";
+		};
+		40DB1EB121EEC1AB000D4F38 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EB321EEC26B000D4F38 /* UpdateCurrenciesAction.swift */,
+				40DB1EB521EEC303000D4F38 /* UpdateNetworkStateAction.swift */,
+				40DB1EB721EEC30A000D4F38 /* UpdateTimerStateAction.swift */,
+				40EF676F21EF9BEB0031CDC9 /* UpdateEditingAction.swift */,
+				40EF677121EFA33A0031CDC9 /* ManualUpdateCurrenciesAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		40DB1EB221EEC1B7000D4F38 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E8C21EE8573000D4F38 /* JSONURLSession.swift */,
+				40DB1E8821EE7FB6000D4F38 /* CurrenciesFetcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40DB1EB921EEC3CE000D4F38 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1EC021EEC7F4000D4F38 /* UI */,
+				40DB1EC121EEC7FE000D4F38 /* Foundation */,
+				40DB1EB221EEC1B7000D4F38 /* Network */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		40DB1EC021EEC7F4000D4F38 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1ECC21EED28B000D4F38 /* TextfieldAdapter.swift */,
+				40DB1E7D21EE7225000D4F38 /* TableViewAdapter.swift */,
+				40DB1E8621EE7D53000D4F38 /* CircularUIImageView.swift */,
+				40E9590621F00E5B003BAE28 /* TableViewProviding.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		40DB1EC121EEC7FE000D4F38 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				40DB1E8A21EE84F1000D4F38 /* MainQueueDispatcher.swift */,
+				40DB1E9621EEBA89000D4F38 /* TimerFactory.swift */,
+				40E958FC21EFFDBE003BAE28 /* TimerProtocol.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		40E958BC21EFBC35003BAE28 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				40E958BD21EFBC41003BAE28 /* Utilities */,
+				40E958E821EFF770003BAE28 /* Actions */,
+				40E958F321EFF8F0003BAE28 /* State Handlers */,
+				40E9590B21F0144E003BAE28 /* Redux */,
+				40E9592321F01F01003BAE28 /* Extensions */,
+				40E9591B21F01B7E003BAE28 /* List Currencies */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		40E958BD21EFBC41003BAE28 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				40E958BF21EFBC4D003BAE28 /* UI */,
+				40E958DB21EFCF41003BAE28 /* Network */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		40E958BE21EFBC46003BAE28 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				40E958C421EFC188003BAE28 /* StubCurrencyTableViewCellConfigurator.swift */,
+				40E958C621EFC20F003BAE28 /* StubNumberFormatter.swift */,
+				40E958C821EFC2BB003BAE28 /* StubUITextFieldDelegate.swift */,
+				40E958CA21EFC3BA003BAE28 /* StubUITableView.swift */,
+				40E958CC21EFC764003BAE28 /* StubTableViewAdapterDelegate.swift */,
+				40E958DE21EFCF88003BAE28 /* StubURLSession.swift */,
+				40E958E021EFD02F003BAE28 /* StubURLSessionDataTask.swift */,
+				40E958E421EFE1C3003BAE28 /* StubQueueDispatcher.swift */,
+				40E958E621EFE228003BAE28 /* StubURLSessionFetcher.swift */,
+				40E958F621EFF964003BAE28 /* StubStore.swift */,
+				40E958F821EFFA32003BAE28 /* StubTimerFactory.swift */,
+				40E958FA21EFFAA5003BAE28 /* StubTimer.swift */,
+				40E9590021F00806003BAE28 /* StubCurrenciesFetcher.swift */,
+				40E9590421F00DC3003BAE28 /* StubUITableViewController.swift */,
+				40E9590821F00EFE003BAE28 /* StubTableViewAdapter.swift */,
+				40E9591921F01820003BAE28 /* StubMiddleware.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		40E958BF21EFBC4D003BAE28 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				40E958C021EFBC5E003BAE28 /* TextfieldAdapterTests.swift */,
+				40E958C221EFC13C003BAE28 /* TableViewAdapterTests.swift */,
+				40E958CE21EFCCEE003BAE28 /* CircularUIImageViewTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		40E958DB21EFCF41003BAE28 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				40E958DC21EFCF5F003BAE28 /* JSONURLSessionTests.swift */,
+				40E958E221EFE12E003BAE28 /* CurrenciesFetcherTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		40E958E821EFF770003BAE28 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				40E958E921EFF793003BAE28 /* UpdateCurrenciesActionTests.swift */,
+				40E958EB21EFF807003BAE28 /* UpdateNetworkStateActionTests.swift */,
+				40E958ED21EFF840003BAE28 /* UpdateTimerStateActionTests.swift */,
+				40E958EF21EFF868003BAE28 /* UpdateEditingActionTests.swift */,
+				40E958F121EFF8B2003BAE28 /* ManualUpdateCurrenciesActionTests.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		40E958F321EFF8F0003BAE28 /* State Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				40E958F421EFF926003BAE28 /* TimerStateHandlerTests.swift */,
+				40E958FE21F007D2003BAE28 /* NetworkStateHandlerTests.swift */,
+				40E9590221F00C76003BAE28 /* TableViewStateHandlerTests.swift */,
+			);
+			path = "State Handlers";
+			sourceTree = "<group>";
+		};
+		40E9590B21F0144E003BAE28 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				40E9590C21F01459003BAE28 /* Reducers */,
+				40E9591521F01732003BAE28 /* StoreTests.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		40E9590C21F01459003BAE28 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				40E9590D21F0146D003BAE28 /* CurrenciesReducerTests.swift */,
+				40E9590F21F015E1003BAE28 /* TimerReducerTests.swift */,
+				40E9591121F01642003BAE28 /* NetworkReducerTests.swift */,
+				40E9591321F01691003BAE28 /* EditingReducerTests.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		40E9591B21F01B7E003BAE28 /* List Currencies */ = {
+			isa = PBXGroup;
+			children = (
+				40E9591E21F01CA5003BAE28 /* UI */,
+				40E9591C21F01B94003BAE28 /* ListCurrenciesViewControllerViewController.swift */,
+			);
+			path = "List Currencies";
+			sourceTree = "<group>";
+		};
+		40E9591E21F01CA5003BAE28 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				40E9591F21F01CAA003BAE28 /* TableView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		40E9591F21F01CAA003BAE28 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				40E9592021F01CB9003BAE28 /* Configurators */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		40E9592021F01CB9003BAE28 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				40E9592121F01CC4003BAE28 /* CurrencyTableViewCellConfiguratorTests.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		40E9592321F01F01003BAE28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40E9592421F01F10003BAE28 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40E9592421F01F10003BAE28 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				40E9592521F01F26003BAE28 /* NumberFormatter_RevolutTestTests.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40DB1E4C21EE651A000D4F38 /* RevolutTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DB1E6A21EE651B000D4F38 /* Build configuration list for PBXNativeTarget "RevolutTest" */;
+			buildPhases = (
+				40DB1E4921EE651A000D4F38 /* Sources */,
+				40DB1E4A21EE651A000D4F38 /* Frameworks */,
+				40DB1E4B21EE651A000D4F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevolutTest;
+			productName = RevolutTest;
+			productReference = 40DB1E4D21EE651A000D4F38 /* RevolutTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40DB1E6021EE651B000D4F38 /* RevolutTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40DB1E6D21EE651B000D4F38 /* Build configuration list for PBXNativeTarget "RevolutTestTests" */;
+			buildPhases = (
+				40DB1E5D21EE651B000D4F38 /* Sources */,
+				40DB1E5E21EE651B000D4F38 /* Frameworks */,
+				40DB1E5F21EE651B000D4F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40DB1E6321EE651B000D4F38 /* PBXTargetDependency */,
+			);
+			name = RevolutTestTests;
+			productName = RevolutTestTests;
+			productReference = 40DB1E6121EE651B000D4F38 /* RevolutTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40DB1E4521EE651A000D4F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ilias Pavlidakis";
+				TargetAttributes = {
+					40DB1E4C21EE651A000D4F38 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					40DB1E6021EE651B000D4F38 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = 40DB1E4C21EE651A000D4F38;
+					};
+				};
+			};
+			buildConfigurationList = 40DB1E4821EE651A000D4F38 /* Build configuration list for PBXProject "RevolutTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40DB1E4421EE651A000D4F38;
+			productRefGroup = 40DB1E4E21EE651A000D4F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40DB1E4C21EE651A000D4F38 /* RevolutTest */,
+				40DB1E6021EE651B000D4F38 /* RevolutTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40DB1E4B21EE651A000D4F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB1E7C21EE66D4000D4F38 /* CurrencyTableViewCell.xib in Resources */,
+				40DB1E5B21EE651B000D4F38 /* LaunchScreen.storyboard in Resources */,
+				40DB1E5821EE651B000D4F38 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB1E5F21EE651B000D4F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40DB1E4921EE651A000D4F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DB1E9A21EEBE0E000D4F38 /* Store.swift in Sources */,
+				40DB1E8B21EE84F1000D4F38 /* MainQueueDispatcher.swift in Sources */,
+				40DB1E9521EEB32B000D4F38 /* String+toNumber.swift in Sources */,
+				40DB1EBB21EEC3DC000D4F38 /* TimerStateHandler.swift in Sources */,
+				40DB1EC321EEC888000D4F38 /* CurrenciesReducer.swift in Sources */,
+				40E958FD21EFFDBE003BAE28 /* TimerProtocol.swift in Sources */,
+				40DB1EBF21EEC793000D4F38 /* NetworkStateHandler.swift in Sources */,
+				40DB1EB421EEC26B000D4F38 /* UpdateCurrenciesAction.swift in Sources */,
+				40DB1E8421EE757B000D4F38 /* CurrencyTableViewCellConfigurator.swift in Sources */,
+				40DB1E8121EE7273000D4F38 /* CurrencyPrice.swift in Sources */,
+				40DB1E9721EEBA89000D4F38 /* TimerFactory.swift in Sources */,
+				40DB1EA121EEBEB5000D4F38 /* AppState.swift in Sources */,
+				40EF677221EFA33A0031CDC9 /* ManualUpdateCurrenciesAction.swift in Sources */,
+				40DB1EAC21EEBF50000D4F38 /* ListenerProtocol.swift in Sources */,
+				40DB1EC721EEC96F000D4F38 /* NetworkReducer.swift in Sources */,
+				40DB1EC521EEC936000D4F38 /* TimerReducer.swift in Sources */,
+				40DB1EA821EEBF22000D4F38 /* ActionProtocol.swift in Sources */,
+				40DB1EB821EEC30A000D4F38 /* UpdateTimerStateAction.swift in Sources */,
+				40DB1EAA21EEBF3B000D4F38 /* MiddlewareProtocol.swift in Sources */,
+				40DB1EC921EECB52000D4F38 /* TimerToNetworkToUILogMiddleware.swift in Sources */,
+				40DB1E7A21EE6699000D4F38 /* CurrencyTableViewCell.swift in Sources */,
+				40DB1ECD21EED28B000D4F38 /* TextfieldAdapter.swift in Sources */,
+				40DB1E5121EE651A000D4F38 /* AppDelegate.swift in Sources */,
+				40DB1EB621EEC303000D4F38 /* UpdateNetworkStateAction.swift in Sources */,
+				40DB1E8D21EE8573000D4F38 /* JSONURLSession.swift in Sources */,
+				40DB1E8721EE7D53000D4F38 /* CircularUIImageView.swift in Sources */,
+				40DB1E8921EE7FB6000D4F38 /* CurrenciesFetcher.swift in Sources */,
+				40DB1EA621EEBF0A000D4F38 /* ReducerProtocol.swift in Sources */,
+				40EF676E21EF9BCF0031CDC9 /* EditingReducer.swift in Sources */,
+				40EF677021EF9BEB0031CDC9 /* UpdateEditingAction.swift in Sources */,
+				40DB1E7E21EE7225000D4F38 /* TableViewAdapter.swift in Sources */,
+				40DB1E9C21EEBE65000D4F38 /* RevolutTest.swift in Sources */,
+				40DB1EBD21EEC61E000D4F38 /* TableViewStateHandler.swift in Sources */,
+				40E9590721F00E5B003BAE28 /* TableViewProviding.swift in Sources */,
+				40DB1E7421EE6580000D4F38 /* ListCurrenciesViewController.swift in Sources */,
+				40DB1EA421EEBEF7000D4F38 /* StoreProtocol.swift in Sources */,
+				40EF676C21EF97280031CDC9 /* NumberFormatter+RevolutTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40DB1E5D21EE651B000D4F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E958CB21EFC3BA003BAE28 /* StubUITableView.swift in Sources */,
+				40E9591821F01778003BAE28 /* StubReducer.swift in Sources */,
+				40E9590E21F0146D003BAE28 /* CurrenciesReducerTests.swift in Sources */,
+				40E958C721EFC20F003BAE28 /* StubNumberFormatter.swift in Sources */,
+				40E958E521EFE1C3003BAE28 /* StubQueueDispatcher.swift in Sources */,
+				40E958FF21F007D2003BAE28 /* NetworkStateHandlerTests.swift in Sources */,
+				40E958DD21EFCF5F003BAE28 /* JSONURLSessionTests.swift in Sources */,
+				40E958F521EFF926003BAE28 /* TimerStateHandlerTests.swift in Sources */,
+				40E9590121F00806003BAE28 /* StubCurrenciesFetcher.swift in Sources */,
+				40E958F721EFF964003BAE28 /* StubStore.swift in Sources */,
+				40E958CD21EFC764003BAE28 /* StubTableViewAdapterDelegate.swift in Sources */,
+				40E9590921F00EFE003BAE28 /* StubTableViewAdapter.swift in Sources */,
+				40E9592621F01F26003BAE28 /* NumberFormatter_RevolutTestTests.swift in Sources */,
+				40E958CF21EFCCEE003BAE28 /* CircularUIImageViewTests.swift in Sources */,
+				40E958E121EFD02F003BAE28 /* StubURLSessionDataTask.swift in Sources */,
+				40E9591621F01732003BAE28 /* StoreTests.swift in Sources */,
+				40E9592221F01CC4003BAE28 /* CurrencyTableViewCellConfiguratorTests.swift in Sources */,
+				40E9591A21F01820003BAE28 /* StubMiddleware.swift in Sources */,
+				40E9591021F015E1003BAE28 /* TimerReducerTests.swift in Sources */,
+				40DB1E6621EE651B000D4F38 /* RevolutTestTests.swift in Sources */,
+				40E958E721EFE228003BAE28 /* StubURLSessionFetcher.swift in Sources */,
+				40E958EC21EFF807003BAE28 /* UpdateNetworkStateActionTests.swift in Sources */,
+				40E958EA21EFF793003BAE28 /* UpdateCurrenciesActionTests.swift in Sources */,
+				40E958C521EFC188003BAE28 /* StubCurrencyTableViewCellConfigurator.swift in Sources */,
+				40E958F021EFF868003BAE28 /* UpdateEditingActionTests.swift in Sources */,
+				40E958EE21EFF840003BAE28 /* UpdateTimerStateActionTests.swift in Sources */,
+				40E958F921EFFA32003BAE28 /* StubTimerFactory.swift in Sources */,
+				40E958FB21EFFAA5003BAE28 /* StubTimer.swift in Sources */,
+				40E958C121EFBC5E003BAE28 /* TextfieldAdapterTests.swift in Sources */,
+				40E9590521F00DC3003BAE28 /* StubUITableViewController.swift in Sources */,
+				40E9590321F00C76003BAE28 /* TableViewStateHandlerTests.swift in Sources */,
+				40E958C921EFC2BB003BAE28 /* StubUITextFieldDelegate.swift in Sources */,
+				40E9591221F01642003BAE28 /* NetworkReducerTests.swift in Sources */,
+				40E9591421F01691003BAE28 /* EditingReducerTests.swift in Sources */,
+				40E958C321EFC13C003BAE28 /* TableViewAdapterTests.swift in Sources */,
+				40E9591D21F01B94003BAE28 /* ListCurrenciesViewControllerViewController.swift in Sources */,
+				40E958E321EFE12E003BAE28 /* CurrenciesFetcherTests.swift in Sources */,
+				40E958DF21EFCF88003BAE28 /* StubURLSession.swift in Sources */,
+				40E958F221EFF8B2003BAE28 /* ManualUpdateCurrenciesActionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40DB1E6321EE651B000D4F38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40DB1E4C21EE651A000D4F38 /* RevolutTest */;
+			targetProxy = 40DB1E6221EE651B000D4F38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40DB1E5921EE651B000D4F38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40DB1E5A21EE651B000D4F38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40DB1E6821EE651B000D4F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40DB1E6921EE651B000D4F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40DB1E6B21EE651B000D4F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBW6JB7T2F;
+				INFOPLIST_FILE = RevolutTest/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlidakis.test.revolut.RevolutTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		40DB1E6C21EE651B000D4F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBW6JB7T2F;
+				INFOPLIST_FILE = RevolutTest/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlidakis.test.revolut.RevolutTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40DB1E6E21EE651B000D4F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBW6JB7T2F;
+				INFOPLIST_FILE = RevolutTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlidakis.test.revolut.RevolutTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevolutTest.app/RevolutTest";
+			};
+			name = Debug;
+		};
+		40DB1E6F21EE651B000D4F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBW6JB7T2F;
+				INFOPLIST_FILE = RevolutTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ipavlidakis.test.revolut.RevolutTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevolutTest.app/RevolutTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40DB1E4821EE651A000D4F38 /* Build configuration list for PBXProject "RevolutTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB1E6821EE651B000D4F38 /* Debug */,
+				40DB1E6921EE651B000D4F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DB1E6A21EE651B000D4F38 /* Build configuration list for PBXNativeTarget "RevolutTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB1E6B21EE651B000D4F38 /* Debug */,
+				40DB1E6C21EE651B000D4F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40DB1E6D21EE651B000D4F38 /* Build configuration list for PBXNativeTarget "RevolutTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40DB1E6E21EE651B000D4F38 /* Debug */,
+				40DB1E6F21EE651B000D4F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40DB1E4521EE651A000D4F38 /* Project object */;
+}
